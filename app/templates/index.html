@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usman Ahmed | DevOps Infrastructure</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #c5a059; --bg: #020617; --card: rgba(30, 41, 59, 0.7); --text: #f8fafc; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: radial-gradient(circle at top right, #1e293b, #020617); color: var(--text); margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        .glass-card { background: var(--card); backdrop-filter: blur(12px); padding: 45px; border-radius: 28px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); text-align: center; width: 100%; max-width: 400px; }
+        h1 { font-size: 30px; margin: 10px 0; }
+        h1 span { color: var(--primary); }
+        .subtitle { font-size: 13px; color: #94a3b8; margin-bottom: 30px; }
+        .input-group { text-align: left; margin-bottom: 15px; }
+        label { font-size: 11px; font-weight: 600; color: var(--primary); text-transform: uppercase; display: block; margin-bottom: 5px; }
+        .input-box, select { background: rgba(15, 23, 42, 0.8); border: 1px solid #334155; border-radius: 10px; padding: 12px; width: 100%; color: white; font-size: 14px; box-sizing: border-box; }
+        .btn { background: linear-gradient(135deg, #c5a059 0%, #a38141 100%); color: #020617; width: 100%; padding: 14px; border-radius: 10px; border: none; font-weight: 700; cursor: pointer; margin-top: 15px; transition: 0.3s; }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(197, 160, 89, 0.3); }
+        .footer { margin-top: 25px; font-size: 10px; color: #64748b; }
+    </style>
+</head>
+<body>
+    <div class="glass-card">
+        <h1>Usman <span>Ahmed</span></h1>
+        <p class="subtitle">Securely commit your professional details to my automated MySQL production node.</p>
+        <form action="/save" method="POST">
+            <div class="input-group"><label>Full Name</label><input type="text" name="name" class="input-box" required></div>
+            <div class="input-group"><label>Email Address</label><input type="email" name="email" class="input-box" required></div>
+            <div class="input-group"><label>User Experience</label>
+                <select name="experience" class="input-box">
+                    <option value="Excellent">Excellent - Professional Build</option>
+                    <option value="Good">Good - Smooth Deployment</option>
+                    <option value="Average">Average - Decent UI</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">COMMIT DATA</button>
+        </form>
+        <div class="footer">STAGING_ENV: ACTIVE | DB_STATUS: ONLINE</div>
+    </div>
+</body>
+</html>
